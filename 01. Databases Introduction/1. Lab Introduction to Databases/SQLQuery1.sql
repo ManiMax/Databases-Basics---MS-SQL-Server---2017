@@ -53,10 +53,10 @@ CREATE TABLE Accounts
 -- 3. Insert Sample Data into Database.
 
 INSERT INTO Clients(FirstName, LastName) VALUES
-	( '????', 'Ivanov' ),
-	( '????', 'Petrov' ),
-	( '????', 'Iliev' ),
-	( '????', 'Ivanova' )
+	( 'Gosho', 'Ivanov' ),
+	( 'Pesho', 'Petrov' ),
+	( 'Ivan', 'Iliev' ),
+	( 'Merry', 'Ivanova' )
 
 INSERT INTO AccountType(AcountName) VALUES
 	( 'Checking' ),
