@@ -6,7 +6,6 @@ SELECT
 	(FirstName + ' ' + LastName) AS [Name],
 	(AccountType.AcountName) AS [Account Type],
 	Balance
-FROM dbo.Clients
-
-JOIN Accounts ON Clients.ClientID = Accounts.ClientID
-JOIN AccountTypes ON AccountTypes.Id = Accounts.AccountTypeId
+FROM Clients
+JOIN Accounts ON Clients.ClientID = Accounts.AccountID
+JOIN AccountType ON AccountType.TypeID = Accounts.AcountTypeID
