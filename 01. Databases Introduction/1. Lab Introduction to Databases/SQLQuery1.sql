@@ -2,9 +2,7 @@
 -- 1. Create a new database named Bank using the MS SQL Server Management Studio GUI.
 
 CREATE DATABASE Bank 
-COLLATE Cyrillic_General_100_CI_AS; 
-GO
-
+COLLATE Cyrillic_General_100_CI_AS;
 
 ------------------------------------------------------------------------------
 -- 2.1 Using an SQL query, create table Clients with the following properties:

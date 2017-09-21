@@ -8,4 +8,4 @@ SELECT
 	Balance
 FROM Clients
 JOIN Accounts ON Clients.ClientID = Accounts.AccountID
-JOIN AccountType ON AccountType.TypeID = Accounts.AcountTypeID
+JOIN AccountType ON AccountType.AcountTypeID = Accounts.AccountID
