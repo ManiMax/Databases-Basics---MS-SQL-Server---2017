@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "04. Insert Records in Both Tables", "04. Insert Records in Both Tables\04. Insert Records in Both Tables.ssmssqlproj", "{A0163FCD-DB6C-4F1E-ACCB-89DB85903A84}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "07. Create Table People", "07. Create Table People\07. Create Table People.ssmssqlproj", "{48C0F68B-BBB9-471C-BBD6-474AEE38594A}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "08. Create Table Users", "08. Create Table Users\08. Create Table Users.ssmssqlproj", "{94E84DD0-DC5A-4096-AF64-DFB77B3AD0DB}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "13. Movies Database", "13. Movies Database\13. Movies Database.ssmssqlproj", "{56F79768-BBCE-4EF5-9D46-ADF8D93CD80E}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "14. Car Rental Database", "14. Car Rental Database\14. Car Rental Database.ssmssqlproj", "{83ED605A-3DEC-4912-80FA-B581BDBB18C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0163FCD-DB6C-4F1E-ACCB-89DB85903A84}.Default|Default.ActiveCfg = Default
+		{B5BB1AF4-2F0C-431B-B47E-41D97EE7ABEE}.Default|Default.ActiveCfg = Default
+		{48C0F68B-BBB9-471C-BBD6-474AEE38594A}.Default|Default.ActiveCfg = Default
+		{94E84DD0-DC5A-4096-AF64-DFB77B3AD0DB}.Default|Default.ActiveCfg = Default
+		{56F79768-BBCE-4EF5-9D46-ADF8D93CD80E}.Default|Default.ActiveCfg = Default
+		{83ED605A-3DEC-4912-80FA-B581BDBB18C1}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
