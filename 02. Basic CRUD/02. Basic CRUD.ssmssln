@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "02 - 21. [dbo].[SoftUni]_Exercises", "02 - 21. [dbo].[SoftUni]_Exercises\02 - 21. [dbo].[SoftUni]_Exercises.ssmssqlproj", "{DBE1F1D9-2094-4F18-B516-1FC65FC9E437}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "22 - 24 . [dbo].[Geography]_Exercises", "22 - 24 . [dbo].[Geography]_Exercises\22 - 24 . [dbo].[Geography]_Exercises.ssmssqlproj", "{71C68EFC-FB9C-4B7A-9465-6367051874EC}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "25. [dbo].[Diablo]_Exercises", "25. [dbo].[Diablo]_Exercises\25. [dbo].[Diablo]_Exercises.ssmssqlproj", "{30920109-B27C-4818-81C8-135138A9C8E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D5DE601-0F3B-4F1D-9991-6BFF8AC041F8}.Default|Default.ActiveCfg = Default
+		{DBE1F1D9-2094-4F18-B516-1FC65FC9E437}.Default|Default.ActiveCfg = Default
+		{71C68EFC-FB9C-4B7A-9465-6367051874EC}.Default|Default.ActiveCfg = Default
+		{30920109-B27C-4818-81C8-135138A9C8E7}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
