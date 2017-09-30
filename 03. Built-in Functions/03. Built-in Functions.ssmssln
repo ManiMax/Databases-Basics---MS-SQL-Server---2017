@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "01. Part I – Queries for SoftUni Database", "01. Part I – Queries for SoftUni Database\01. Part I – Queries for SoftUni Database.ssmssqlproj", "{233F0BB7-793D-4AC4-B029-4F74D4658DF4}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "02. Part II – Queries for Geography Database", "02. Part II – Queries for Geography Database\02. Part II – Queries for Geography Database.ssmssqlproj", "{319CC977-15B3-4043-9EAB-915A1EA85AC5}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "03. Part III – Queries for Diablo Database", "03. Part III – Queries for Diablo Database\03. Part III – Queries for Diablo Database.ssmssqlproj", "{4E063153-1E6D-4B6A-9709-50B316CAC7E1}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "04. Part IV – Date Functions Queries", "04. Part IV – Date Functions Queries\04. Part IV – Date Functions Queries.ssmssqlproj", "{3282BCFA-6BC4-4480-B539-6D8A37117327}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5C92678-58B9-4577-BC4E-1E9E249A8139}.Default|Default.ActiveCfg = Default
+		{233F0BB7-793D-4AC4-B029-4F74D4658DF4}.Default|Default.ActiveCfg = Default
+		{319CC977-15B3-4043-9EAB-915A1EA85AC5}.Default|Default.ActiveCfg = Default
+		{4E063153-1E6D-4B6A-9709-50B316CAC7E1}.Default|Default.ActiveCfg = Default
+		{3282BCFA-6BC4-4480-B539-6D8A37117327}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
