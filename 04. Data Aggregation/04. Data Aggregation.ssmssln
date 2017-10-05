@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "01. Records’ Count", "01. Records’ Count\01. Records’ Count.ssmssqlproj", "{BAA25B2E-1DFC-4316-8E36-A594DAEC4DA3}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "02. Queryes up of SoftUni", "02. Queryes up of SoftUni\02. Queryes up of SoftUni.ssmssqlproj", "{2AB17D81-1F52-4D82-8BFF-E48C075ED050}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAA25B2E-1DFC-4316-8E36-A594DAEC4DA3}.Default|Default.ActiveCfg = Default
+		{0038F040-543F-485A-BBFF-7600565301BB}.Default|Default.ActiveCfg = Default
+		{2AB17D81-1F52-4D82-8BFF-E48C075ED050}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
