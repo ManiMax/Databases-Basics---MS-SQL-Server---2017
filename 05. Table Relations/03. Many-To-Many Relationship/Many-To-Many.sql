@@ -1,0 +1,63 @@
+USE TABLE_RELATIONS;
+GO
+
+CREATE TABLE Students
+(
+	[ID] INT IDENTITY(1, 1),
+	[Name] NVARCHAR(50) NOT NULL,
+
+	CONSTRAINT [PK_Students] 
+	PRIMARY KEY ([ID])
+);
+GO
+
+CREATE TABLE Exams
+(
+	[ID] INT IDENTITY(101, 1),
+	[Name] NVARCHAR(50) NOT NULL,
+
+	CONSTRAINT [PK_Exams] 
+	PRIMARY KEY ([ID])
+);
+GO
+
+CREATE TABLE StudentsExams
+(
+	[StudentID] INT NOT NULL,
+	[ExamID] INT NOT NULL,
+
+	CONSTRAINT [CPK_Students_Exams]
+	PRIMARY KEY ([StudentID], [ExamID]),
+
+	CONSTRAINT [FK_Students] 
+	FOREIGN KEY ([StudentID]) 
+	REFERENCES Students([ID])
+	ON DELETE CASCADE, 
+
+	CONSTRAINT [FK_Exams] 
+	FOREIGN KEY ([ExamID]) 
+	REFERENCES Exams([ID])
+	ON DELETE CASCADE
+);
+GO
+
+INSERT INTO Students VALUES
+('Mila'),
+('Toni'),
+('Ron');
+GO
+
+INSERT INTO Exams VALUES
+('SpringMVC'),
+('Neo4j'),
+('Oracle 11g');
+GO
+
+INSERT INTO StudentsExams VALUES
+(1, 101),
+(1, 102),
+(2, 101),
+(3, 103),
+(2, 102),
+(2, 103);
+GO

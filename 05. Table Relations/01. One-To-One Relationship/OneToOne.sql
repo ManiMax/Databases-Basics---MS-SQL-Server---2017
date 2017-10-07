@@ -1,0 +1,41 @@
+CREATE DATABASE [TABLE_RELATIONS];
+GO
+
+USE [TABLE_RELATIONS];
+GO
+
+CREATE TABLE Passports 
+(
+	PassportID INT IDENTITY(100, 1),
+	PassportNumber VARCHAR(50) NOT NULL,
+	CONSTRAINT PK_Passports PRIMARY KEY (PassportID)
+);
+GO
+
+CREATE TABLE Persons 
+(
+	PersonID INT IDENTITY,
+	FirstName NVARCHAR(50),
+	Salary DECIMAL(15, 2),
+	PassportID INT FOREIGN KEY REFERENCES Passports(PassportID) UNIQUE,
+	CONSTRAINT PK_Persons PRIMARY KEY (PersonID)
+);
+GO
+
+INSERT INTO Passports VALUES
+( 'N34FG21B' ),
+( 'K65LO4R7' ),
+( 'ZE657QP2' );
+GO
+
+INSERT INTO Persons VALUES
+( 'Roberto', 43300, 101 ),
+( 'Tom', 43300, 102 ),
+( 'Yana', 43300, 100 );
+GO
+
+SELECT * FROM Passports;
+GO
+
+SELECT * FROM Persons;
+GO
