@@ -13,17 +13,17 @@ CREATE TABLE Cities
 	PRIMARY KEY (CityID)
 );
 
-CREATE TABLE Costumers
+CREATE TABLE Customers
 (
-	CostumerID INT IDENTITY(1, 1),
+	CustomerID INT IDENTITY(1, 1),
 	Name VARCHAR(50) NOT NULL,
 	Birthday DATE,
 	CityID INT,
 
-	CONSTRAINT PK_Costumers 
-	PRIMARY KEY (CostumerID),
+	CONSTRAINT PK_Customers 
+	PRIMARY KEY (CustomerID),
 
-	CONSTRAINT FK_Costumers 
+	CONSTRAINT FK_Customers 
 	FOREIGN KEY (CityID) 
 	REFERENCES Cities(CityID)
 );
@@ -31,14 +31,14 @@ CREATE TABLE Costumers
 CREATE TABLE Orders
 (
 	OrderID INT IDENTITY(1, 1),
-	CostumerID INT NOT NULL,
+	CustomerID INT NOT NULL,
 
 	CONSTRAINT PK_Orders 
 	PRIMARY KEY (OrderID),
 
 	CONSTRAINT FK_Orders
-	FOREIGN KEY (CostumerID)
-	REFERENCES Costumers(CostumerID)
+	FOREIGN KEY (CustomerID)
+	REFERENCES Customers(CustomerID)
 );
 
 CREATE TABLE ItemTypes
@@ -64,19 +64,19 @@ CREATE TABLE Items
 	REFERENCES ItemTypes(ItemTypeID)
 );
 
-CREATE TABLE OredersItems
+CREATE TABLE OrederItems
 (
 	OrderID INT NOT NULL,
 	ItemID INT NOT NULL,
 
-	CONSTRAINT PK_OredersItems 
+	CONSTRAINT PK_OrederItems 
 	PRIMARY KEY (OrderID, ItemID),
 
-    CONSTRAINT FK_OrdersItems_Orders
+    CONSTRAINT FK_OrderItems_Orders
 	FOREIGN KEY (OrderID)
 	REFERENCES Orders(OrderID),
 
-	CONSTRAINT FK_OrdersItems_Items
+	CONSTRAINT FK_OrderItems_Items
 	FOREIGN KEY (ItemID)
 	REFERENCES Items(ItemID)
 );
