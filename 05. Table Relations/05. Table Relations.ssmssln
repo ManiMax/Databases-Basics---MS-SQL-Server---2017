@@ -9,15 +9,27 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "02. One-To-Many Relationshi
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "03. Many-To-Many Relationship", "03. Many-To-Many Relationship\03. Many-To-Many Relationship.ssmssqlproj", "{0A1ECE5F-0567-4F59-9D63-D432AF8843EC}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "04. Self-Referencing", "04. Self-Referencing\04. Self-Referencing.ssmssqlproj", "{242CF4F2-B07B-4CEE-AEAC-95BBD096B87B}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "05. Online Store Database", "05. Online Store Database\05. Online Store Database.ssmssqlproj", "{3EB0CEA2-14E2-44EB-BF28-F5D9CF147F35}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "06. University Database", "06. University Database\06. University Database.ssmssqlproj", "{811A1C36-B115-495D-B5C0-EDDDE914B1C2}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "09. Peaks in Rila", "09. Peaks in Rila\09. Peaks in Rila.ssmssqlproj", "{CEAA4B20-EDF5-42AC-B734-85C266A65103}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F570D67D-9C6B-49EF-90F8-51470ADAE219}.Default|Default.ActiveCfg = Default
-		{077FC0C8-16DD-464E-87A8-97A056B9D841}.Default|Default.ActiveCfg = Default
 		{E1B5534F-6F28-4823-8CE7-B70E3D78A7F9}.Default|Default.ActiveCfg = Default
 		{0A1ECE5F-0567-4F59-9D63-D432AF8843EC}.Default|Default.ActiveCfg = Default
+		{17058F19-0E78-4AAB-B67E-221D46368117}.Default|Default.ActiveCfg = Default
+		{242CF4F2-B07B-4CEE-AEAC-95BBD096B87B}.Default|Default.ActiveCfg = Default
+		{3EB0CEA2-14E2-44EB-BF28-F5D9CF147F35}.Default|Default.ActiveCfg = Default
+		{811A1C36-B115-495D-B5C0-EDDDE914B1C2}.Default|Default.ActiveCfg = Default
+		{CEAA4B20-EDF5-42AC-B734-85C266A65103}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
