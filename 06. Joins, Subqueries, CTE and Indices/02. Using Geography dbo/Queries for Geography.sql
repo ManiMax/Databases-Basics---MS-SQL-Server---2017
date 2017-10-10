@@ -50,8 +50,8 @@ SELECT ContinentCode, CurrencyCode, CurrencyUsage FROM
 		HAVING COUNT(CurrencyCode) > 1
 	) AS Currencies
 ) AS Result
-WHERE Ranking = 1 --AND CurrencyUsage > 1
-
+WHERE Ranking = 1 /*AND CurrencyUsage > 1*/;
+GO
 
 
 --- 16. Countries Without any Mountains ---
@@ -59,7 +59,8 @@ SELECT COUNT(CountryCode) FROM Countries
 WHERE CountryCode NOT IN
 (
 	SELECT CountryCode FROM MountainsCountries
-)
+);
+GO
 
 --- 17. Highest Peak and Longest River by Country ---
 SELECT TOP(5) 
@@ -102,7 +103,8 @@ SELECT TOP(5)
   	 ) AS r ON r.CountryCode = p.CountryCode
   	 WHERE p.HighestPeakElevation = 1 AND r.LongestRiverLength = 1
   ) AS cr ON cr.CountryCode = c.CountryCode
-ORDER BY [HighestPeakElevation] DESC, [LongestRiverLength] DESC, CountryName 
+ORDER BY [HighestPeakElevation] DESC, [LongestRiverLength] DESC, CountryName;
+GO
 
 --- 18. *Highest Peak Name and Elevation by Country ---
 SELECT TOP(5)
@@ -122,4 +124,5 @@ FROM
 	LEFT JOIN Mountains AS m ON m.Id = mc.MountainId
 ) AS r
 GROUP BY [Country], [Highest Peak Name], [Mountain]
-ORDER BY [Country], [Highest Peak Name]
+ORDER BY [Country], [Highest Peak Name];
+GO
