@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="01. DDL">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="02. DML">
   <Items>
     <LogicalFolder Name="Verbindungen" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="DESKTOP-0NANS27\SQLEXPRESS:DESKTOP-0NANS27\spzvt">
-          <Created>2017-10-15T10:40:03.1359417+02:00</Created>
+          <Created>2017-10-15T14:07:21.1676365+02:00</Created>
           <Type>SQL</Type>
           <Server>DESKTOP-0NANS27\SQLEXPRESS</Server>
           <UserName />
           <Authentication>Windows-Authentifizierung</Authentication>
-          <InitialDB />
+          <InitialDB>master</InitialDB>
           <LoginTimeout>30</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
@@ -19,23 +19,23 @@
     </LogicalFolder>
     <LogicalFolder Name="Abfragen" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="00. InsertSkeleton.sql">
+        <FileNode Name="02. Insert.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-0NANS27\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-0NANS27\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>00. InsertSkeleton.sql</FullPath>
+          <FullPath>02. Insert.sql</FullPath>
         </FileNode>
-        <FileNode Name="01. CreatingDatabase.sql">
+        <FileNode Name="03. Update.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-0NANS27\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-0NANS27\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>01. CreatingDatabase.sql</FullPath>
+          <FullPath>03. Update.sql</FullPath>
         </FileNode>
-        <FileNode Name="01.1. ExampleQueryFullPoints.sql">
+        <FileNode Name="04. Delete.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-0NANS27\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-0NANS27\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>01.1. ExampleQueryFullPoints.sql</FullPath>
+          <FullPath>04. Delete.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
