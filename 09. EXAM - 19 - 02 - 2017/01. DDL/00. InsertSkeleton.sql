@@ -21,7 +21,7 @@
 	PARTICULAR PURPOSE.
 ============================================================================*/
 
-USE Bakery;
+USE Bakery
 
 -- Table: Countries
 SET IDENTITY_INSERT Countries ON
