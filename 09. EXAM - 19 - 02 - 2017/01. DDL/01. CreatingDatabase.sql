@@ -12,7 +12,7 @@ CREATE TABLE Products
 		  [Name] NVARCHAR(25) UNIQUE,
 		  [Description] NVARCHAR(250),
 		  [Recipe] NVARCHAR(MAX),
-		  [Price] DECIMAL(38, 8),
+		  [Price] MONEY,
 
 		  CONSTRAINT PK_Products_Id 
 		  PRIMARY KEY([Id]),

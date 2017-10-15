@@ -55,11 +55,35 @@
           <AssociatedConnUserName />
           <FullPath>10. Customers without Feedback.sql</FullPath>
         </FileNode>
-        <FileNode Name="11. Honorable Mentions.sql">
+        <FileNode Name="11.  Honorable Mentions.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-0NANS27\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-0NANS27\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>11. Honorable Mentions.sql</FullPath>
+          <FullPath>11.  Honorable Mentions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12. Customers by Criteria.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-0NANS27\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-0NANS27\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>12. Customers by Criteria.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13. Middle Range Distributors.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-0NANS27\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-0NANS27\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>13. Middle Range Distributors.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14.  The Most Positive Country.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-0NANS27\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-0NANS27\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>14.  The Most Positive Country.sql</FullPath>
+        </FileNode>
+        <FileNode Name="15. Country Representative.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-0NANS27\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-0NANS27\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>15. Country Representative.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
