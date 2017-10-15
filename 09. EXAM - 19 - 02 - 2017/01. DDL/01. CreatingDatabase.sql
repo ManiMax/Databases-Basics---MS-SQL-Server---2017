@@ -100,7 +100,7 @@ CREATE TABLE Customers
 		  [LastName] NVARCHAR(25),
 		  [Gender] CHAR(1),
 		  [Age] INT,
-		  [PhoneNumber] VARCHAR(10),
+		  [PhoneNumber] CHAR(10),
 		  [CountryId] INT,
 
 		  CONSTRAINT PK_Customers_Id 
