@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "01. Queries for Bank Database", "01. Queries for Bank Database\01. Queries for Bank Database.ssmssqlproj", "{EFBEDA77-9319-4613-812D-26CBFFABB053}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "02. Queries for Diablo Database", "02. Queries for Diablo Database\02. Queries for Diablo Database.ssmssqlproj", "{4F09FFD4-2022-49A5-A0F5-F3B5AA662B74}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "03. Queries for SoftUni Database", "03. Queries for SoftUni Database\03. Queries for SoftUni Database.ssmssqlproj", "{DB54F5BA-9061-4AA0-A1FA-D7676676F45D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFBEDA77-9319-4613-812D-26CBFFABB053}.Default|Default.ActiveCfg = Default
+		{DB83AF93-14E1-455F-8E37-CBE2C68B439D}.Default|Default.ActiveCfg = Default
+		{4F09FFD4-2022-49A5-A0F5-F3B5AA662B74}.Default|Default.ActiveCfg = Default
+		{DB54F5BA-9061-4AA0-A1FA-D7676676F45D}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
