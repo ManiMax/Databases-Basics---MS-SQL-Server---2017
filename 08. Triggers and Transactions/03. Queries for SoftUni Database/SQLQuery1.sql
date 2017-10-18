@@ -39,16 +39,14 @@ CREATE TABLE Deleted_Employees
 	LastName NVARCHAR(50), 
 	MiddleName NVARCHAR(50), 
 	JobTitle NVARCHAR(90),
-    DepartmentId INT, 
-	Salary MONEY
+    DepartmentId INT FOREIGN KEY REFERENCES Departments(DepartmentId), 
+	Salary DECIMAL(15, 4)
 );
-GO
 
-CREATE TRIGGER tr_OnDelete ON Employees INSTEAD OF DELETE AS
+CREATE TRIGGER tr_FiredEmploees ON Employees FOR DELETE AS
 BEGIN
 	INSERT INTO Deleted_Employees
 				(
-					EmployeeId,
 					FirstName,
 					LastName,
 					MiddleName,
@@ -56,16 +54,13 @@ BEGIN
 					DepartmentId,
 					Salary  
 				) 
-				SELECT EmployeeID
-				 	   FirstName,
+				SELECT FirstName,
 					   LastName,
 					   MiddleName,
 					   JobTitle,
 					   DepartmentID,
 					   Salary  
-				  FROM deleted
+				FROM deleted
 END;
-GO
 
-SELECT * FROM Employees
 ---------------------------------------------------------------------

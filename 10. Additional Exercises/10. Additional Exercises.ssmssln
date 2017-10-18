@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "01. Queries for Diablo Database", "01. Queries for Diablo Database\01. Queries for Diablo Database.ssmssqlproj", "{44CBCF0D-7A52-4E1F-8223-30AC6D1052CD}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "02. Queries for Geography Database", "02. Queries for Geography Database\02. Queries for Geography Database.ssmssqlproj", "{1E6F2AC3-BE70-4933-A70B-2FFD9E1A2307}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44CBCF0D-7A52-4E1F-8223-30AC6D1052CD}.Default|Default.ActiveCfg = Default
+		{866BF5DE-E88F-4393-9951-89390DE75C2B}.Default|Default.ActiveCfg = Default
+		{1E6F2AC3-BE70-4933-A70B-2FFD9E1A2307}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
