@@ -1,24 +1,27 @@
 /*
-	List all mechanics and their preference for each vendor as a percentage of parts’ quantities 
+	List all mechanics and their preference for each vendor as a percentage of partsâ€™ quantities 
 	they ordered for their jobs. 
 
 	Express the percentage as an integer value. 
 	
 	Order them by:
-	 - mechanic’s full name (ascending), 
+	 - mechanicâ€™s full name (ascending), 
 	 - number of parts from each vendor (descending),
 	 - by vendor name (ascending).
 
 	Required columns:
-	 • Mechanic Full Name
-	 • Vendor Name
-	 • Parts ordered from vendor
-	 • Preference for Vendor (percantage of parts out of all parts count ordered by the mechanic)	 Mechanic          Vendor                        Parts     Preference
-	 --------------------------------------------------------------------
+	 â€¢ Mechanic Full Name
+	 â€¢ Vendor Name
+	 â€¢ Parts ordered from vendor
+	 â€¢ Preference for Vendor (percantage of parts out of all parts count ordered by the mechanic)
+
+     Mechanic          Vendor                        Parts     Preference
+     --------------------------------------------------------------------
      Gary Nunlee       Shenzhen Ltd.                 2         100%
      Jess Chaffins     Qingdao Technology            4         57%
      Jess Chaffins     Suzhou Precision Products     2         28%
-     Jess Chaffins     Fenghua Import Export         1         14%	 ...               ...                           ...       ...
+     Jess Chaffins     Fenghua Import Export         1         14%
+     ...               ...                           ...       ...
 */
 
 WITH cte AS
