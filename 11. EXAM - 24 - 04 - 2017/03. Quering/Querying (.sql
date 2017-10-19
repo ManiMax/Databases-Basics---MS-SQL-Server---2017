@@ -168,5 +168,60 @@ ORDER BY [Times Serviced] DESC
 
 
 -- 16. Missing Parts --------------------------------------------------------------------
+/*
+   List all parts that are needed for active jobs (not Finished) without sufficient quantity in stock 
+ and in pending orders (the sum of parts in stock and parts ordered is less than the required quantity). 
+ Order them by part ID (ascending).
+
+   Required columns:
+       • Part ID
+       • Description
+       • Required – number of parts required for active jobs
+       • In Stock – how many of the part are currently in stock
+       • Ordered – how many of the parts are expected to be delivered 
+	     (associated with order that is not Delivered)
+
+   Example:
+
+		 PartId     Description				Required     In Stock     Ordered
+         12         Shock Dampener			2			 1            0
+         14         Door Handle				1			 0            0
+         17         Lid Switch Assembly		1			 0            0
+*/
+
+
+SELECT  pn.PartId, 
+		p.Description, 
+		SUM(pn.Quantity) AS [Required],
+		SUM(p.StockQty) AS [In Stock],
+		ISNULL(SUM(op.Quantity), 0) AS [Ordered]
+FROM PartsNeeded AS pn
+JOIN(SELECT JobId FROM Jobs WHERE Status <> 'Finished') 
+	AS j ON j.JobId = pn.JobId 
+JOIN(SELECT PartId, Description, StockQty FROM Parts) AS p ON p.PartId = pn.PartId
+LEFT JOIN Orders AS o ON o.JobId = j.JobId
+LEFT JOIN OrderParts AS op ON op.OrderId = o.OrderId
+GROUP BY pn.PartId, p.Description
+HAVING SUM(pn.Quantity) > SUM(p.StockQty) + ISNULL(SUM(op.Quantity), 0)
+ORDER BY pn.PartId
+
+
+
+
+SELECT  p.PartId,
+		p.Description,
+		SUM(pn.Quantity) AS [Required],
+		AVG(p.StockQty) AS [In Stock],
+		ISNULL(SUM(op.Quantity), 0) AS [Ordered] 
+FROM Parts AS p
+JOIN PartsNeeded AS pn ON pn.PartId = p.PartId
+JOIN Jobs AS j ON j.JobId = pn.JobId
+LEFT JOIN Orders AS o ON o.JobId = j.JobId
+LEFT JOIN OrderParts AS op ON op.OrderId = o.OrderId
+WHERE j.Status <> 'Finished'
+GROUP BY p.PartId, p.Description
+HAVING SUM(pn.Quantity) >  AVG(p.StockQty) + ISNULL(SUM(op.Quantity), 0)
+ORDER BY p.PartId
+
 
 -----------------------------------------------------------------------------------------
