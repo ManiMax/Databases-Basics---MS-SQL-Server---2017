@@ -14,13 +14,14 @@
 	 • Vendor Name
 	 • Parts ordered from vendor
 	 • Preference for Vendor (percantage of parts out of all parts count ordered by the mechanic)
+
      Mechanic          Vendor                        Parts     Preference
      --------------------------------------------------------------------
      Gary Nunlee       Shenzhen Ltd.                 2         100%
      Jess Chaffins     Qingdao Technology            4         57%
      Jess Chaffins     Suzhou Precision Products     2         28%
      Jess Chaffins     Fenghua Import Export         1         14%
-	 ...               ...                           ...       ...
+     ...               ...                           ...       ...
 */
 
 WITH cte AS
